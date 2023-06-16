@@ -24,9 +24,9 @@ div+div {
     margin-top: 1em;
 }
 
-fieldset ~ p label {
+p label {
     display: inline-block;
-    width: 100px;
+    width: 150px;
     text-align: right;
 }
 
@@ -46,9 +46,8 @@ input:focus {
 }
 
 fieldset {
-    width: 250px;
+    width: 128px;
     box-sizing: border-box;
-    margin-right: 136px;
     border: 1px solid #999;
 }
 
