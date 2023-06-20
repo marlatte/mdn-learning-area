@@ -4,18 +4,84 @@
     <meta charset="utf-8"/>
     <title>Styling basics: Task 1</title>
     <style>
-      * {
+    * {
         box-sizing: border-box;
       }
 
-      body {
+    body {
         background-color: #fff;
         color: #333;
         font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
         padding: 1em;
-        margin: 0;
-        width: 500px;
-      }
+        margin: 0 auto;
+        width: 400px;
+		background-image: linear-gradient(lightgreen, 80%, lemonchiffon);
+		background-repeat: no-repeat;
+    }
+
+	h2 {
+		font-variant: small-caps;
+		text-decoration: underline;
+		margin-left: 120px;
+	}
+
+	label,
+	input,
+	select,
+	button,
+	ul,
+	li {
+		font-family: inherit;
+		font-size: 100%;
+		padding: inherit;
+		margin: inherit;
+		width: inherit;
+	}
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	li {
+		display: flex;
+	}
+
+	label {
+		align-self: center;
+		width: 115px;
+		text-align: right;
+		margin-right: 5px;
+	}
+
+	select,
+	input,
+	button {
+		flex: auto;
+		height: 2em;
+		padding: 5px 10px;
+	}
+
+	select {
+		text-align: center;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	button {
+		border-radius: 5px;
+		border: 1px solid #000;
+		background: #333;
+		color: #fff;
+		cursor: pointer;
+		margin-left: 125px;
+	}
+
+	button:hover {
+		background: #000;
+	}
 
     </style>
   </head>
